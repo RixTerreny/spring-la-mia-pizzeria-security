@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th.block th:replace="fragments :: head"></th.block>
+    <title>Pizza</title>
+</head>
+<body>
+<div class="container text-center">
+    <h1 class="mt-4 ">Pizze</h1>
+
+    <div th:if="${pizzasList.size() == 0}">Non ci sono pizze</div>
+
+    <div class="d-flex gap-3 mt-3">
+        <div class="card" style="width: 18rem;" th:each="pizza : ${pizzasList}">
+            <img th:src="${pizza.imgUrl}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" th:text="${pizza.name}"></h5>
+                <p class="card-text" th:text="${pizza.description}"></p>
+                <h5 class="card-title">Prezzo: [[${pizza.price}]]€</h5>
+                <a th:href="${pizza.id}" class="btn btn-primary">Visualizza</a>
+                <a th:href="@{'edit/{id}'  (id= ${pizza.id})}" class="btn btn-primary">Modifica</a>
+                <form action="#" th:action="@{'delete/{id}' (id= ${pizza.id})}" method="post">
+                    <button class="btn btn-danger mt-2" type="submit" id="submitButton">Cancella</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <a th:href="@{ingredient}" class="btn btn-primary mt-5 ">Ingredienti</a>
+    <a th:href="@{create}" class="btn btn-primary mt-5 ">Aggiungi pizza +</a>
+</div>
+</body>
+</html>

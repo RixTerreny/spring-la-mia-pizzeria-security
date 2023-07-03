@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th.block th:replace="fragments :: head"></th.block>
+    <title>show</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="m-auto text-center mt-3">Pizza</h1>
+    <div class="d-flex gap-3 mt-3 justify-content-center">
+        <div class="card" style="width: 18rem;">
+            <img th:src="${pizza.imgUrl}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title" th:text="${pizza.name}"></h5>
+                <p class="card-text" th:text="${pizza.description}"></p>
+                <h5>Ingredienti:</h5>
+                <ul th:each="ingredient : ${pizza.ingredients}">
+                    <li th:text="${ingredient.name}"></li>
+                </ul>
+                <h5 class="card-title">Prezzo: [[${pizza.price}]]€</h5>
+
+            </div>
+        </div>
+        <ul class="mb-2" th:each="discount : ${pizza.discounts}">
+            <li th:text="${discount.title}"></li>
+            <li>Inizio: [[${discount.startDate}]]</li>
+            <li>Fine: [[${discount.endDate}]]</li>
+            <a th:href="@{discount/edit/{id} (id=${discount.id})}" class="btn btn-primary mt-1">Modifica </a>
+            <form action="#" th:action="@{'discount/delete/{id}' (id= ${discount.id})}" method="post">
+                <button class="btn btn-danger mt-2" type="submit" id="submitButton">Cancella</button>
+            </form>
+        </ul>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <a th:href="@{/}" class="btn btn-primary me-2">Vai indietro</a>
+        <a th:href="@{discount/create (pizzaId=${pizza.id})}" class="btn btn-primary">Aggiungi sconto </a>
+    </div>
+
+</div>
+</body>
+</html>
