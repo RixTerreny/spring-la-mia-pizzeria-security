@@ -11,3 +11,9 @@ INSERT INTO `ingredient` (`name`) VALUES ('Mozzarella');
 INSERT INTO `ingredient` (`name`) VALUES ('Pomodoro');
 
 INSERT INTO `pizza_ingredients` (`ingredient_id`, `pizza_id`) VALUES ('2', '1'), ('2', '2'),('3', '1');
+
+INSERT INTO `user` (`id`, `password`, `username`) VALUES ('1', '{noop}password', 'gino');
+
+INSERT INTO `role` (`id`, `name`) VALUES ('1', 'ADMIN'), ('2', 'USER');
+
+INSERT INTO `user_roles` (`user_id`, `roles_id`) VALUES ('1', '2');
