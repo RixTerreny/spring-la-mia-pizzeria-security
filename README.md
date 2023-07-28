@@ -5,7 +5,7 @@ This is a sample web application to help manage a pizzeria. It allows you to vie
 This repo is the extention of [spring-la-mia-pizzeria-crud](https://github.com/RixTerreny/spring-la-mia-pizzeria-crud) and [spring-la-mia-pizzeria-relazioni](https://github.com/RixTerreny/spring-la-mia-pizzeria-relazioni), the readme here is about the new implementation made about security.
 
 ## Security
-add spring-boot-starter-security to your pom.xml like this:
+Add spring-boot-starter-security to your pom.xml like this:
 ```
 <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -17,4 +17,4 @@ The code inherent spring boot security can be found in the package security with
 - DatabaseUserDetailsService
 - SecurityConfiguration
 
-for more information about the setup of these classes i suggest to read the official documentation [Spring Security](https://docs.spring.io/spring-security/reference/)
+For more information about the setup of these classes i suggest to read the official documentation of [Spring Security](https://docs.spring.io/spring-security/reference/).
