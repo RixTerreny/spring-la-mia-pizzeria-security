@@ -23,4 +23,5 @@ For more information about the setup of these classes i suggest you to read the 
 The role expected are 2:
 - `ADMIN`
 - `USER`
+
 The USER can only visualize the index of the pizzas, while all the other CRUD can be managed only by an ADMIN.
