@@ -24,4 +24,4 @@ The role expected are 2:
 - `ADMIN`
 - `USER`
 
-The USER can only visualize the index of the pizzas, while all the other CRUD can be managed only by an ADMIN.
+The USER can only visualize the index or the details of the pizzas, while all the other CRUD can be managed only by an ADMIN.
