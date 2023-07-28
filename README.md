@@ -6,7 +6,4 @@ This repo is the extention of [spring-la-mia-pizzeria-crud](https://github.com/R
 
 ## Security
 
-`<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-security</artifactId>
-</dependency>`
+```<dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-security</artifactId></dependency>```
