@@ -173,5 +173,5 @@ In conclusion, this Pizza Management Web Application provides a user-friendly in
 
 ⚠️ **Attention: This project is no longer actively maintained.**
 
-This means there will be no new developments or security updates. We recommend considering more up-to-date and supported alternatives for your needs thanks for the collaboration.
+This means there will be no new developments or security updates. We recommend considering more up-to-date and supported alternatives for your needs, thanks for the collaboration.
 
