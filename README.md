@@ -29,7 +29,7 @@ The `Pizza` entity represents a pizza in the application. It has the following p
 - `imgUrl` (String)
 - `price` (Double)
 
-## CRUD Operations
+## Pizza's CRUD Operations
 
 ### Create
 
@@ -77,7 +77,7 @@ The `Pizza` entity represents a pizza in the application. It has the following p
 
 - The pizza name, description, image URL, and price are required fields.
 
-## Discount Operations
+## Discount's CRUD Operations
 
 ### Create Discount
 
@@ -166,4 +166,12 @@ The role expected are 2:
 - `ADMIN`
 - `USER`
 
-The USER can only visualize the index or the details of the pizzas, while all the other CRUD can be managed only by an ADMIN.
+
+In conclusion, this Pizza Management Web Application provides a user-friendly interface for efficiently managing pizzerias, offering a seamless experience for creating, updating, and deleting pizza records, along with handling special offers and ingredients. The security features ensure that only authorized administrators can perform critical CRUD operations, enhancing the overall system integrity. Enjoy managing your pizzeria effortlessly with this application! 🍕
+
+## Project Status
+
+⚠️ **Attention: This project is no longer actively maintained.**
+
+This means there will be no new developments or security updates. We recommend considering more up-to-date and supported alternatives for your needs thanks for the collaboration.
+
