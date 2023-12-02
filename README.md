@@ -1,4 +1,4 @@
-# Pizza Management Web Application pt. 3  :pizza:
+# Pizza Management Web Application  :pizza:
 
 This is a sample web application to help manage pizzerias. It allows you to view, create, update, and delete pizza records in the database. Additionally, it supports managing special offers and ingredients and this CRUD operation can be made only by an `ADMIN` not by an `USER`.
 
@@ -76,6 +76,64 @@ The `Pizza` entity represents a pizza in the application. It has the following p
 ## Validations
 
 - The pizza name, description, image URL, and price are required fields.
+
+## Discount Operations
+
+### Create Discount
+
+- URL: `/discount/create`
+- Method: `GET`
+- Description: Displays a form to create a new discount for a specific pizza.
+
+### Save Discount
+
+- URL: `/discount/create`
+- Method: `POST`
+- Description: Saves the discount data to the database for a specific pizza.
+
+### Update Discount
+
+- URL: `/discount/edit/{id}`
+- Method: `GET`
+- Description: Displays a form to edit the details of a specific discount for a pizza.
+
+### Save Update Discount
+
+- URL: `/discount/edit/{id}`
+- Method: `POST`
+- Description: Update the discount data to the database for a specific pizza.
+
+### Delete Discount 
+
+- URL: `/discount/edit/{id}`
+- Method: `POST`
+- Description: Deletes the discount with the given ID from the database for a specific pizza.
+
+## Ingredient Operations
+
+### List Ingredients
+
+- URL: `/ingredient`
+- Method: `GET`
+- Description: Displays a list of all ingredients used in the pizzeria. Allows adding new ingredients and deleting existing ones.
+
+### Create Ingredient
+
+- URL: `/ingredient/create`
+- Method: `GET`
+- Description: Displays a form to create a new ingredient.
+
+### Save Ingredient
+
+- URL: `/ingredient/create`
+- Method: `POST`
+- Description:  Saves the ingredient data to the database.
+
+### Save Ingredient
+
+- URL: `/ingredient/delete/{id}`
+- Method: `POST`
+- Description:  Delete the ingredient from the database.
 
 ## How to Use
 
